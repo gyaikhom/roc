@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Receiver Operating Characteristic (ROC) Curve</title>
+    <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="roc.js" charset="utf-8"></script>
+    <script src="normal.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="roc.css"/>
+  </head>
+
+  <body>
+    <div id="roc"></div>
+    <div id="normal"></div>
+    <script>
+      roc.init("roc", 400, 300, 70);
+      normal.init("normal", [-5, 5], 400, 300, 70);
+    </script>
+  </body>
+</html>
