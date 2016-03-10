@@ -123,6 +123,7 @@
         s_mean = -1;
         s_stddev = 1;
         s = d.append('div').attr('class', 'sick');
+        s.append('div').attr('class', 'title').text('Sick');
         add_slider(s, "Mean", "sick-mean",
                    xlim[0], 0, num_steps, s_mean);
         add_slider(s, "SD", "sick-stddev",
@@ -130,6 +131,7 @@
         h_mean = 1;
         health_stddev = 1;
         h = d.append('div').attr('class', 'healthy');
+        h.append('div').attr('class', 'title').text('Healthy');
         add_slider(h, "Mean", "healthy-mean",
                    0, xlim[1], num_steps, h_mean);
         add_slider(h, "SD", "healthy-stddev",

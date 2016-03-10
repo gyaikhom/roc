@@ -45,24 +45,21 @@ div.healthy {
     float: left;
     font: 13px sans-serif;
     color: #555;
-    margin-top: -30px;
 }
 
-div.sick:before {
-    content: "Sick";
+div.sick .title {
     color: #EC407A;
     font-weight: bold;
     padding: 0px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     display: block;
 }
 
-div.healthy:before {
-    content: "Healthy";
+div.healthy .title {
     color: #26A69A;
     font-weight: bold;
     padding: 0px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     display: block;
 }
 
@@ -74,8 +71,9 @@ div.healthy * {
 div.sick div,
 div.healthy div {
     clear: both;
+    width: 40px;
+    text-align: right;
     margin-right: 10px;
-    margin-top: 5px;
 }
 
 #roc .diagonal {
@@ -164,3 +162,8 @@ div.healthy div {
     margin-bottom: -30px
 }
 
+#normal > div {
+    margin-top: -30px;
+    position: relative;
+    display: inline-block;
+}
