@@ -44,8 +44,8 @@
         }
         point.attr('cx', x(fpr))
             .attr('cy', y(tpr));
-        coord.text('(' + tpr.toPrecision(2) + ', '
-                   + fpr.toPrecision(2) + ')')
+        coord.text('(' + fpr.toPrecision(2) + ', '
+                   + tpr.toPrecision(2) + ')')
             .attr("transform", 'translate(' +
                   (x(fpr) + displacement) + ','
                   + (y(tpr) - displacement) + ')');
