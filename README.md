@@ -9,5 +9,3 @@ JavaScript and CSS. View the demo as follows:
     $ cd roc
     $ python -m SimpleHTTPServer
 
-Further details are given at [my
-homepage](http://yaikhom.com/2016/03/10/understanding-receiver-operating-characteristic-curves.html).
